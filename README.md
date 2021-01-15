@@ -11,12 +11,18 @@ Project 2
 
 ## Table of Contents
 
-1. [Project Description](#Description)
-2. [Installation](#Installation)
-3. [Usage](#Usage)
-4. [Credits](#Credits)
-5. [Command to Test](#Test)
-6. [License](#License)
+- [Project-2](#project-2)
+        - [Version 1.0](#version-10)
+  - [Table of Contents](#table-of-contents)
+    - [Project Description](#project-description)
+      - [User Story](#user-story)
+      - [Project Links](#project-links)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Collaborators](#collaborators)
+    - [Credits](#credits)
+    - [Command to Test](#command-to-test)
+    - [License](#license)
 
 ### Project Description
 
@@ -41,6 +47,29 @@ so that they can take them home forever!
 ### Usage
 
 
+User story:
+AS A non-profit per adoption agency wanting to handle customer database entries directly
+I WANT a easy to use, nice looking website for my business
+SO THAT potential adoptees can browse available animals and get in contact with sellers directly and safely
+
+Pet adoption website
+-allow users to create an account
+-allow posting of new animal up for adoption
+-allow search by location, animal type
+-post and save images???
+
+-landing page with recently created posting, login button
+-CRUD for each post
+
+Form requirements: 
+-Species of animal
+-Age
+-Gender (Sex, whatever is PC)
+-Description
+-Vaccine information
+-Description of animal
+-Location
+-Adoption fees (if applicable)
 
 ### Collaborators
 
@@ -83,3 +112,4 @@ Copyright © 2020 [Nick Menotti]<br>
 Please contact me for additional information:<br>
 [GitHub Repo](https://github.com/TJH1992/Project-2.git)<br>
 [Email:](nmenotti@cox.net)</i></p>
+
