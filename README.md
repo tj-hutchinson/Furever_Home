@@ -26,27 +26,6 @@ Project 2
 
 ### Project Description
 
-
-
-#### User Story
-
-As a pet adoption agency
-I want an app that will help potential adopters to find loveable pets
-so that they can take them home forever!
-
-#### Project Links
-
-[GitHub Repo](https://github.com/TJH1992/Project-2.git)<br>
-
-![Demo GIF]()<br>
-
-### Installation
-
-
-
-### Usage
-
-
 User story:
 AS A non-profit per adoption agency wanting to handle customer database entries directly
 I WANT a easy to use, nice looking website for my business
@@ -70,6 +49,26 @@ Form requirements:
 -Description of animal
 -Location
 -Adoption fees (if applicable)
+
+#### User Story
+
+As a pet adoption agency
+I want an app that will help potential adopters to find loveable pets
+so that they can take them home forever!
+
+#### Project Links
+
+[GitHub Repo](https://github.com/TJH1992/Project-2.git)<br>
+
+![Demo GIF]()<br>
+
+### Installation
+
+
+
+### Usage
+
+
 
 ### Collaborators
 
