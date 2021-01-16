@@ -31,6 +31,32 @@ AS A non-profit per adoption agency wanting to handle customer database entries 
 I WANT a easy to use, nice looking website for my business
 SO THAT potential adoptees can browse available animals and get in contact with sellers directly and safely
 
+Landing page: 
+Log in or sign up 
+
+Log in:
+Email and password
+
+Sign up:
+Name
+Email
+Password
+Captcha possibly??
+
+Once signed in user can view all posts and sort by:
+-Location
+-Animal type
+
+Users can Post new offers:
+-Species of animal
+-Age
+-Gender
+-Description
+-Vaccine information
+-Description of animal
+-Location
+-Adoption fees (if applicable)
+
 Pet adoption website
 -allow users to create an account
 -allow posting of new animal up for adoption
@@ -39,16 +65,6 @@ Pet adoption website
 
 -landing page with recently created posting, login button
 -CRUD for each post
-
-Form requirements: 
--Species of animal
--Age
--Gender (Sex, whatever is PC)
--Description
--Vaccine information
--Description of animal
--Location
--Adoption fees (if applicable)
 
 #### User Story
 
