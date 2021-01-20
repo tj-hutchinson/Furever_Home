@@ -1,4 +1,7 @@
-const { Sequelize } = require(".");
+// const { Sequelize } = require(".");
+const BLOB = require("blob");
+const fs = require("fs");
+const Sequelize = require("sequelize");
 
 module.exports = function(sequelize, DataTypes) {
   const Post = sequelize.define("Post", {
@@ -43,10 +46,10 @@ module.exports = function(sequelize, DataTypes) {
       validate: {
         len: [1]
       }
+    },
+    data: {
+      type: Sequelize.BLOB("long")
     }
-    // photo: {
-    //   type: Sequelize.BLOB("long")
-    // }
   });
 
   Post.associate = function(models) {

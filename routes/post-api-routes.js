@@ -2,27 +2,27 @@ const db = require("../models");
 
 module.exports = function(app) {
   // Find all Authors and return them to the user with res.json
-  app.get("/api/authors", (req, res) => {
-    db.Author.findAll({}).then(dbAuthor => {
-      res.json(dbAuthor);
+  app.get("/api/pets", (req, res) => {
+    db.Pet.findAll({}).then(dbPet => {
+      res.json(dbPet);
     });
   });
 
-  app.get("/api/authors/:id", (req, res) => {
+  app.get("/api/pets/:id", (req, res) => {
     // Find one Author with the id in req.params.id and return them to the user with res.json
-    db.Author.findOne({
+    db.Pet.findOne({
       where: {
         id: req.params.id
       }
-    }).then(dbAuthor => {
-      res.json(dbAuthor);
+    }).then(dbPet => {
+      res.json(dbPet);
     });
   });
 
   app.post("/api/pets", (req, res) => {
     // Create an Author with the data available to us in req.body
     console.log(req.body);
-    db.Pet.create(req.body).then(dbAuthor => {
+    db.Pet.create(req.body).then(dbPet => {
       res.json(dbPet);
     });
   });
