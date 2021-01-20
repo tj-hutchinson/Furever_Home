@@ -2,3 +2,10 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+
+body {
+  background-image: url("../images/cute_animal_background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
