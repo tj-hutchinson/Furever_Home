@@ -14,3 +14,13 @@ body {
 .navbar {
   background-color: aliceblue;
 }
+
+.vertical-center {
+  min-height: 100%;
+  max-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
