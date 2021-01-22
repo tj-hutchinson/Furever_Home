@@ -1,6 +1,7 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
+// const Pet = require("../models/pet");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -53,5 +54,48 @@ module.exports = function(app) {
         id: req.user.id
       });
     }
+  });
+
+  app.get("/api/:pets?", (req, res) => {
+    if (req.params.pets) {
+      // Display the JSON for ONLY that character.
+      // (Note how we're using the ORM here to run our searches)
+      Pet.findOne({
+        where: {
+          routeName: req.params.pets
+        }
+      }).then(result => {
+        return res.json(result);
+      });
+    } else {
+      Pet.findAll().then(result => {
+        return res.json(result);
+      });
+    }
+  });
+
+  // If a user sends data to add a new character...
+  app.post("/api/new", (req, res) => {
+    // Take the request...
+    const pet = req.body;
+
+    // Create a routeName
+
+    // Using a RegEx Pattern to remove spaces from character.name
+    // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
+    const routeName = pet.name.replace(/\s+/g, "").toLowerCase();
+
+    // Then add the character to the database using sequelize
+    db.Pet.create({
+      routeName: routeName,
+      name: pet.name,
+      description: pet.description,
+      breed: pet.breed,
+      age: pet.age,
+      gender: pet.gender,
+      location: pet.location
+    });
+
+    res.status(204).end();
   });
 };

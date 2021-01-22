@@ -34,4 +34,8 @@ module.exports = function(app) {
   app.get("/shelter", isAuthenticated, (req, res) => {
     res.render("shelter");
   });
+
+  app.get("/addPet", isAuthenticated, (req, res) => {
+    res.render("addPet");
+  });
 };
