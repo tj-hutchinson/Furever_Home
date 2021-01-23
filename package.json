@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@petfinder/petfinder-js": "^1.0.6",
     "axios": "^0.21.1",
     "bcryptjs": "2.4.3",
     "blob": "^0.1.0",
