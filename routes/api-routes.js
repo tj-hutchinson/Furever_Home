@@ -1,9 +1,6 @@
 // Requiring our models and passport as we've configured it
-
 const db = require("../models");
 const passport = require("../config/passport");
-
-// const Pet = require("../models/pet");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -58,24 +55,6 @@ module.exports = function(app) {
     }
   });
 
-  // app.get("/api/:pets?", (req, res) => {
-  //   if (req.params.pets) {
-  //     // Display the JSON for ONLY that character.
-  //     // (Note how we're using the ORM here to run our searches)
-  //     Pet.findOne({
-  //       where: {
-  //         routeName: req.params.pets
-  //       }
-  //     }).then(result => {
-  //       return res.json(result);
-  //     });
-  //   } else {
-  //     Pet.findAll().then(result => {
-  //       return res.json(result);
-  //     });
-  //   }
-  // });
-
   // If a user sends data to add a new character...
   app.post("/api/new", (req, res) => {
     // Take the request...
@@ -96,8 +75,6 @@ module.exports = function(app) {
       age: pet.age,
       gender: pet.gender,
       location: pet.location
-      // }).catch(err => {
-      //   res.status(401).json(err);
     }).catch(err => {
       res.status(401).json(err);
     });

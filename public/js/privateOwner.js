@@ -7,15 +7,16 @@ $(document).ready(() => {
       row.addClass("allPets");
       row.attr("id", "post-number-" + i);
       $("#chirp-area").prepend(row);
-      $("post-number-" + i).append("<h2>" + results[i].description + "</h2>");
-      $("post-number-" + i).append("<p>" + results[i].name + "</p>");
-      $("post-number-" + i).append("<p>" + results[i].breed + "</p>");
-      $("post-number-" + i).append("<p>" + results[i].age + "</p>");
-      $("post-number-" + i).append("<p>" + results[i].gender + "</p>");
-      $("post-number-" + i).append("<p>" + results[i].location + "</p>");
-      $("post-number-" + i).append(
-        "<p>On " + new Date(results[i].created_at).toLocaleDateString() + "</p>"
-      );
+      $("#post-number-" + i).append("<h2>" + results[i].description + "</h2>");
+      $("#post-number-" + i).append("<p>" + results[i].name + "</p>");
+      $("#post-number-" + i).append("<p>" + results[i].breed + "</p>");
+      $("#post-number-" + i).append("<p>" + results[i].age + "</p>");
+      $("#post-number-" + i).append("<p>" + results[i].gender + "</p>");
+      $("#post-number-" + i).append("<p>" + results[i].location + "</p>");
+      // $("#post-number-" + i).append(
+      //   "<p>On " + new Date(results[i].created_at).toLocaleDateString() + "</p>"
+      // );
+      $("#post-number-" + i).append("<p>On " + results[i].createdAt + "</p>");
     }
   });
 });
