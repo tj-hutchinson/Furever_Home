@@ -26,9 +26,7 @@
     <h1>FUR-Ever Home</h1>
     <h3>Adopt your new pet!</h3>
     <hr>
-    <a href="/" class="btn btn-light btn-lg">
-      <span class="fa fa-eye"></span> Search Pets</a>
-    <a href="/addPet" class="btn btn-light btn-lg">
+    <a href="/addPet" class="btn btn-danger btn-lg">
       <span class="fa fa-plus"></span> Add New Pet</a>
   </div>
   <div class="row">
@@ -40,11 +38,6 @@
         </div>
         <div id="chirp-area">
           <!-- Content will go in here -->
-          <ul>
-            {{#each pets}}
-            {{> pets pets=.}}
-            {{/each}}
-          </ul>
         </div>
       </div>
 
