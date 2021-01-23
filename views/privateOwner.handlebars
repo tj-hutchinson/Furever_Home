@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="../views/members.handlebars">FUR-Ever Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -24,32 +25,46 @@
 </nav>
 
 
-  <div class="container">
-    <div class="jumbotron">
-      <h1>FUR-Ever Home</h1>
-      <h3>Adopt your new pet!</h3>
-      <hr>
-      <a href="/" class="btn btn-danger btn-lg">
-        <span class="fa fa-eye"></span> Search Pets</a>
-      <a href="/addPet" class="btn btn-danger btn-lg">
-        <span class="fa fa-plus"></span> Add New Pet</a>
-    </div>
-    <div class="row">
-
-      <div class="col-lg-12">
-
-        <div class="card">
-          <div class="card-header">
-            Pet Database
-          </div>
-          <div class="card-body" id="well-section">
-
-            <!-- Content will go in here -->
-
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="container">
+  <div class="jumbotron mx-auto text-center">
+    <h1>FUR-Ever Home</h1>
+    <h3>Adopt your new pet!</h3>
+    <hr>
+    <a href="/" class="btn btn-danger btn-lg">
+      <span class="fa fa-eye"></span> Search Pets</a>
+    <a href="/addPet" class="btn btn-danger btn-lg">
+      <span class="fa fa-plus"></span> Add New Pet</a>
   </div>
+  <div class="row">
 
-  <script src="js/allPet.js" type="text/javascript"></script>
+    <div class="col-lg-12">
+
+      <div class="card">
+        <div class="card-header">
+          Pet Database
+        </div>
+        <div id="chirp-area">
+          <!-- Content will go in here -->
+          <ul>
+            {{#each pets}}
+            {{> pets pets=.}}
+            {{/each}}
+          </ul>
+        </div>
+
+
+
+
+
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+</div>
+</div>
+</div>
+</div>
