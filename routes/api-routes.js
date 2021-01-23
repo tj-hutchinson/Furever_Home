@@ -94,8 +94,10 @@ module.exports = function(app) {
       age: pet.age,
       gender: pet.gender,
       location: pet.location
+      // }).catch(err => {
+      //   res.status(401).json(err);
+    }).catch(err => {
+      res.status(401).json(err);
     });
-
-    res.status(204).end();
   });
 };
