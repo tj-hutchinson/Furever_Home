@@ -44,6 +44,7 @@ $(document).ready(() => {
     // empty each input box by replacing the value with an empty string
     $("#name").val("");
     $("#body").val("");
+    $("#description").val("");
     $("#breed").val("");
     $("#age").val("");
     $("#gender").val("");
