@@ -58,7 +58,7 @@ $(document).ready(() => {
           );
         } else {
           $("#post-number-" + i).append(
-            "<img class='h-25 w-25' src='https://via.placeholder.com/150'>"
+            "<img class='h-25 w-25>"
           );
         }
       }
