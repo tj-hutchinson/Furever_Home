@@ -12,7 +12,7 @@ $(document).ready(() => {
         .val()
         .trim(),
       // description from description input
-      description: $('#description')
+      description: $("#description")
         .val()
         .trim(),
       // breed from breed input
