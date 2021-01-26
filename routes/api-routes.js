@@ -82,7 +82,6 @@ module.exports = function(app) {
 
   app.get("/privatePets", (req, res) => {
     db.Pet.findAll({}).then(results => {
-      console.log(results);
       res.json(results);
     });
   });
