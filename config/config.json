@@ -1,8 +1,7 @@
 {
   "development": {
     "username": "root",
-
-    "password": "Mfcwa04rsxtypes",
+    "password": "",
     "database": "passport_demo",
     "host": "127.0.0.1",
     "dialect": "mysql"
