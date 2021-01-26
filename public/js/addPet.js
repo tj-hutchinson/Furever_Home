@@ -1,20 +1,21 @@
-// Code here handles what happens when a user submits a new character on the form.
+// Code here handles what happens when a user submits a new pet on the form.
 // Effectively it takes the form inputs then sends it to the server to save in the DB.
 $(document).ready(() => {
   // when user clicks add-btn
   $("#add-btn").on("click", event => {
     event.preventDefault();
 
-    // make a newCharacter obj
+    // make a newPet obj
     const newPet = {
       // name from name input
       name: $("#name")
         .val()
         .trim(),
-      // role from role input
+      // description from description input
       description: $('#description')
         .val()
         .trim(),
+      // breed from breed input
       breed: $("#breed")
         .val()
         .trim(),
@@ -22,10 +23,11 @@ $(document).ready(() => {
       age: $("#age")
         .val()
         .trim(),
+      // gender from gender input
       gender: $("#gender")
         .val()
         .trim(),
-      // points from force-points input
+      // location from location input
       location: $("#location")
         .val()
         .trim()
