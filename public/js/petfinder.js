@@ -41,7 +41,11 @@ $(document).ready(() => {
             "<p>" + response.data.animals[i].gender + "</p>"
           );
           $("#post-number-" + i).append(
-            "<p>" + response.data.animals[i].contact.address.city + ", " + response.data.animals[i].contact.address.state +"</p>"
+            "<p>" +
+              response.data.animals[i].contact.address.city +
+              ", " +
+              response.data.animals[i].contact.address.state +
+              "</p>"
           );
         }
       })
