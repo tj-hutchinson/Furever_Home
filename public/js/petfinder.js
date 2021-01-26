@@ -18,10 +18,7 @@ $(document).ready(() => {
         row.attr("src", response.data.animals[i].url);
         $("#shelter-area").prepend(row);
         $("#post-number-" + i).append(
-          "<h2 class='card-header'>" + response.data.animals[i].type + "</h2>"
-        );
-        $("#post-number-" + i).append(
-          "<p>Name: " + response.data.animals[i].name + "</p>"
+          "<h2 class='card-header'>" + response.data.animals[i].name + " the " + response.data.animals[i].type + "</h2>"
         );
         $("#post-number-" + i).append(
           "<p>Description: " + response.data.animals[i].description + "</p>"
