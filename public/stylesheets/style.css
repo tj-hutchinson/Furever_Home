@@ -25,3 +25,8 @@ body {
   background: rgba(128, 128, 128 , 0.75);
   color: white;
 }
+
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

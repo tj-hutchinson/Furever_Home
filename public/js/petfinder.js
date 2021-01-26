@@ -7,6 +7,9 @@ $(document).ready(() => {
 
   pf.animal.search().then(response => {
     // Do something with `response.data.animals`
+    const shelteredPets = {
+      pets: response
+    };
     response.data.animals
       .forEach(animal => {
         console.log(` -- ${animal.name} id: ${animal.id} url: ${animal.url}`);
