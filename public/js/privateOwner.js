@@ -19,6 +19,7 @@ $(document).ready(() => {
       $("#post-number-" + i).append(
         "<p>Location: " + results[i].location + "</p>"
       );
+      $("#post-number-" + i).append("<p>Email: " + results[i].email + "</p>");
       // $("#post-number-" + i).append(
       //   "<p>On " + new Date(results[i].created_at).toLocaleDateString() + "</p>"
       // );
