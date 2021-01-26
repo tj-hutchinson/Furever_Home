@@ -12,7 +12,7 @@ $(document).ready(() => {
         .val()
         .trim(),
       // description from description input
-      description: $("#description")
+      description: $('#description')
         .val()
         .trim(),
       // breed from breed input
@@ -29,6 +29,10 @@ $(document).ready(() => {
         .trim(),
       // location from location input
       location: $("#location")
+        .val()
+        .trim(),
+      // Contact Email Address
+      email: $('#email')
         .val()
         .trim()
     };
@@ -51,6 +55,7 @@ $(document).ready(() => {
     $("#age").val("");
     $("#gender").val("");
     $("#location").val("");
+    $("#email").val("");
 
     // redirect to /privateOwner
     $.get("/privateOwner", isAuthenticated, (req, res) => {

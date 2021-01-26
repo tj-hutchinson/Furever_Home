@@ -1,12 +1,12 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/members">Member Home</a>
+    <a class="navbar-brand" href="/members">FUR-Ever Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="/privateOwner">Adopt from Private Owner</a>
         </li>
@@ -16,8 +16,8 @@
         <li class="nav-item">
           <a class="nav-link" href="/addPet">Post a pet for Adoption</a>
         </li>
-        <li>
-          <a class="navbar-brand" href="/logout"> Logout </a>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Logout</a>
         </li>
       </ul>
     </div>
@@ -26,13 +26,13 @@
 <div class="container">
   <div class="jumbotron mx-auto text-center">
     <h1>FUR-Ever Home</h1>
-    <h3>Adopt your new pet!</h3>
+    <h3>Find Pets From Private Owners!</h3>
     <hr>
     <a href="/addPet" class="btn btn-light btn-lg">
       <span class="fa fa-plus"></span> Add New Pet</a>
   </div>
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-9 mx-auto">
       <div id="chirp-area">
         <!-- Content will go in here -->
       </div>

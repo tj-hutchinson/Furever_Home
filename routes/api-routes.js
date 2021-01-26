@@ -74,7 +74,8 @@ module.exports = function(app) {
       breed: pet.breed,
       age: pet.age,
       gender: pet.gender,
-      location: pet.location
+      location: pet.location,
+      email: pet.email
     }).catch(err => {
       res.status(401).json(err);
     });
