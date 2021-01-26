@@ -62,6 +62,7 @@ $(document).ready(() => {
           );
           //this line makes the entire card a link, wasn't able to get it to work at the bottom of this so I put it here and everything seems to work.
           $("#post-number-" + i).append(`
+
         <a href="${response.data.animals[i].url}" class="stretched-link"></a>`);
           $("#post-number-" + i).append(
             "<p>City: " +
