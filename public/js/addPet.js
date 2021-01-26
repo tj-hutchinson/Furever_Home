@@ -51,5 +51,10 @@ $(document).ready(() => {
     $("#age").val("");
     $("#gender").val("");
     $("#location").val("");
+
+    // redirect to /privateOwner
+    $.get("/privateOwner", isAuthenticated, (req, res) => {
+      res.render("privateOwner", {});
+    });
   });
 });
