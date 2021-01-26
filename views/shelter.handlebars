@@ -34,10 +34,44 @@
       <span class="fa fa-plus"></span> Add New Pet</a> --}}
   </div>
 
-<div class="input-group mb-3">
-  <input type="text" id = "user-postal" class="form-control" placeholder="Postal Code" aria-label="Postal Code" aria-describedby="button-addon2">
-  <button class="btn btn-outline-secondary" type="button" id="search-btn">Find Your FUR-Ever Pet</button>
-</div>
+  <div class="row">
+    <div class="col-lg-12">
+
+      <div class="card">
+        <div class="card-header">
+          Find Pets
+        </div>
+        <div class="card-body">
+          <form action="" method="POST" role="form">
+
+            <div class="form-group">
+              <label for="">Please Enter Desired Postal Code</label>
+              <input type="text" class="form-control" id="postal-code" placeholder="Postal Code">
+            </div>
+
+            {{!-- <div class="form-group">
+              <label for="">Type Of FUR-Ever Pet</label>
+              <input type="text" class="form-control" id="pet-type" placeholder="Pet Type">
+            </div> --}}
+
+          <select class="form-select" id = "pet-type" aria-label="Default select example">
+            <option selected>Type Of FUR-Ever Pet</option>
+            <option value="1">Dog</option>
+            <option value="2">Cat</option>
+            <option value="3">Horse</option>
+            <option value="4">Rabbit</option>
+            <option value="5">Bird</option>
+          </select>
+
+          </form>
+          <br>
+          <div class="text-right">
+            <button type="submit" class="btn btn-primary btn-md" id="search-btn">
+              <span class="fa fa-fire"></span> Find Your FUR-Ever Pet</button>
+          </div>
+        </div>
+      </div>
+
 
   <div class="row">
     <div class="col-lg-12">

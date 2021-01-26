@@ -2,9 +2,11 @@
 $(document).ready(() => {
   $("#search-btn").click(event => {
     event.preventDefault();
-    const userInput = $("#user-postal");
+    const userPostal = $("#postal-code");
+    const userType = $("#pet-type option:selected");
 
-    const userPostal = userInput.val().trim();
+    const postalCode = userPostal.val().trim();
+    const petType = userType.text();
 
     console.log(userPostal);
 
@@ -22,12 +24,13 @@ $(document).ready(() => {
 
     pf.animal
       .search({
-        location: userPostal
+        location: postalCode,
+        type: petType
       })
       .then(response => {
         response.data.animals;
-
-        for (let i = 0; i < 10; i++) {
+        console.log(response.data.animal);
+        for (let i = 0; i < 20; i++) {
           const row = $("<div>");
           row.addClass("allPets").addClass("card");
           $("#card").append("class=" + response.data.animals[i].url);
