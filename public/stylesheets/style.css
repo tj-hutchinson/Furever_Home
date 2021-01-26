@@ -4,6 +4,8 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+  font-family: 'Mallanna', sans-serif;
+
 }
 
 .navbar {
@@ -29,4 +31,6 @@ body {
 .card {
   margin-top: 20px;
   margin-bottom: 20px;
+  background: rgb(150,135,112);
+  background: linear-gradient(0deg, rgba(150,135,112,0.9948354341736695) 0%, rgba(255,247,243,1) 100%);
 }
