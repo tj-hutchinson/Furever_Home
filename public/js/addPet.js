@@ -30,6 +30,10 @@ $(document).ready(() => {
       // location from location input
       location: $("#location")
         .val()
+        .trim(),
+      // Contact Email Address
+      email: $("#email")
+        .val()
         .trim()
     };
 
