@@ -57,9 +57,7 @@ $(document).ready(() => {
               ">"
           );
         } else {
-          $("#post-number-" + i).append(
-            "<img class='h-25 w-25>"
-          );
+          $("#post-number-" + i).append("<img class='h-25 w-25>");
         }
       }
     })
