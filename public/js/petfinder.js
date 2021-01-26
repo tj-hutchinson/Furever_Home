@@ -6,7 +6,9 @@ $(document).ready(() => {
   });
 
   pf.animal
-    .search()
+    .search({
+      location: "92071"
+    })
     .then(response => {
       response.data.animals;
 
