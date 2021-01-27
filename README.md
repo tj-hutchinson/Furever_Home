@@ -25,7 +25,7 @@ We developed this project as part of UCSD's web development bootcamp. The goal o
 User story:
 AS A non-profit per adoption agency wanting to handle customer database entries directly
 I WANT a easy to use, nice looking website for my business
-SO THAT potential adoptees can browse available animals and get in contact with sellers directly and safely
+SO THAT potential adoptees can browse available animals and get in contact with sellers directly and safely.
 
 ### Installation
 
@@ -62,3 +62,4 @@ Copyright © 2021 <br>
 
 <p align='center'><i>
 Please contact us for additional information<br>
+
